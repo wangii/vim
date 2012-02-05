@@ -120,3 +120,7 @@ nnoremap <Leader>: :Tabularize /:/<Cr>
 
 " block comment
 vnoremap <d-/> :s/^/\/\//<Cr>
+
+" cocoa dev
+nnoremap <d-k> :exec("CocoaDoc ".expand("<cword>"))<Cr>
+nnoremap <d-up> :Alternate<Cr>
