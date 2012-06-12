@@ -3,7 +3,9 @@ filetype plugin on
 filetype on
 filetype plugin indent on
 
-colo darkspectrum
+"colo molokai
+colo Monokai
+"colo darkspectrum
 "colo zenburn
 "colo sienna
 "let g:sienna_style = "dark"
@@ -13,11 +15,13 @@ set cpoptions+=$
 
 set autoread
 
-"set guifont=Droid_Sans_Mono:h14
+set guifont=Menlo_Regular:h14
+"set guifont=AurulentSansMono-Regular:h14
+"set guifont=Andale_Mono:h14
+"set guifont=Droid_Sans_Mono:h15
 "set guifont=Consolas:h15
 "set guifont=Monaco:h15
-set guifont=TheSansMono-ExtraLight:h14
-"set guifont=Ubuntu_Mono:h15
+"set guifont=TheSansMono-ExtraLight:h14
 "set noantialias
 "
 "Turn off Toolbar;
@@ -122,5 +126,9 @@ nnoremap <Leader>: :Tabularize /:/<Cr>
 vnoremap <d-/> :s/^/\/\//<Cr>
 
 " cocoa dev
-nnoremap <d-k> :exec("CocoaDoc ".expand("<cword>"))<Cr>
-nnoremap <d-up> :Alternate<Cr>
+au FileType objc nnoremap <d-k> :exec("CocoaDoc ".expand("<cword>"))<Cr>
+au FileType objc nnoremap <d-up> :Alternate<Cr>
+
+au! bufwritepost gvimrc source ~/.gvimrc
+" Sun  5 Feb 2012 01:44:40 GMT
+

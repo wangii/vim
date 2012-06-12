@@ -76,7 +76,8 @@ hi Constant		guifg=#ef5939 gui=none
 hi String		guifg=#fce94f
 hi Identifier	guifg=#729fcf
 hi Statement	guifg=#ffffff gui=bold
-hi PreProc		guifg=#ffffff gui=bold
+hi PreProc		guifg=#ae542c gui=bold
+"hi PreProc		guifg=#ffffff gui=bold
 hi Type			guifg=#8ae234 gui=bold
 hi Special		guifg=#e9b96e
 hi Underlined	guifg=#ad7fa8 gui=underline
@@ -127,4 +128,15 @@ hi TabLine		guifg=#A3A3A3 guibg=#202020 gui=none
 hi TabLineFill	guifg=#535353 guibg=#202020 gui=none
 hi TabLineSel	guifg=#FFFFFF gui=bold
 "hi TabLineSel	guifg=#FFFFFF guibg=#000000 gui=bold
+
+" cocoa
+hi cocoaFunction	guifg=#7B3F99
+hi cocoaClass		guifg=#7B3F99
+hi cocoaProtocol	guifg=#7B3F99
+hi cocoaType		guifg=#8ae234
+hi cocoaConstant	guifg=#4f7acf gui=bold
+hi objcConstant		guifg=#4f7acf gui=bold
+hi objcType			guifg=#4f7acf gui=bold
+hi cocoaNotification guifg=#4f7acf gui=bold
+
 " vim: sw=4 ts=4
