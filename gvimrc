@@ -5,6 +5,7 @@ filetype plugin indent on
 
 "colo molokai
 colo Monokai
+"colo "Clouds Midnight"
 "colo darkspectrum
 "colo zenburn
 "colo sienna
@@ -15,11 +16,12 @@ set cpoptions+=$
 
 set autoread
 
-set guifont=Menlo_Regular:h14
+set guifont=Source\ Code\ Pro\ Light:h13
+"set guifont=Menlo_Regular:h12
 "set guifont=AurulentSansMono-Regular:h14
 "set guifont=Andale_Mono:h14
-"set guifont=Droid_Sans_Mono:h15
-"set guifont=Consolas:h15
+"set guifont=Droid_Sans_Mono:h13
+"set guifont=Consolas:h13
 "set guifont=Monaco:h15
 "set guifont=TheSansMono-ExtraLight:h14
 "set noantialias
@@ -132,3 +134,7 @@ au FileType objc nnoremap <d-up> :Alternate<Cr>
 au! bufwritepost gvimrc source ~/.gvimrc
 " Sun  5 Feb 2012 01:44:40 GMT
 
+" for macbookpro
+nmap ƒ 
+nmap ∫ 
+map <D-r> :source ~/.gvimrc<cr>
