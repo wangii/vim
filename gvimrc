@@ -16,7 +16,8 @@ set cpoptions+=$
 
 set autoread
 
-set guifont=Source\ Code\ Pro\ Light:h13
+"set guifont=Source\ Code\ Pro\ Light:h13
+set guifont=Source\ Code\ Pro:h13
 "set guifont=Menlo_Regular:h12
 "set guifont=AurulentSansMono-Regular:h14
 "set guifont=Andale_Mono:h14
@@ -125,7 +126,11 @@ nnoremap <Leader>= :Tabularize /=/<Cr>
 nnoremap <Leader>: :Tabularize /:/<Cr>
 
 " block comment
-vnoremap <d-/> :s/^/\/\//<Cr>
+" vnoremap <d-/> :s/^/\/\//<Cr>
+" now changed to NERD_commenter
+"vmap <D-/> <Leader>c <Cr>
+vmap <D-/> <Plug>NERDCommenterToggle
+nmap <D-/> 1<Plug>NERDCommenterToggle
 
 " cocoa dev
 au FileType objc nnoremap <d-k> :exec("CocoaDoc ".expand("<cword>"))<Cr>
@@ -137,4 +142,5 @@ au! bufwritepost gvimrc source ~/.gvimrc
 " for macbookpro
 nmap ƒ 
 nmap ∫ 
+
 map <D-r> :source ~/.gvimrc<cr>
